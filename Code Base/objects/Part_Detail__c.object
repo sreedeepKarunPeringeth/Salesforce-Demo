@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electronic Item~E</fullName>
+                    <default>false</default>
+                    <label>Electronic Item~E</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Item~M</fullName>
+                    <default>false</default>
+                    <label>Mechanical Item~M</label>
+                </value>
+                <value>
+                    <fullName>Consumables~C</fullName>
+                    <default>false</default>
+                    <label>Consumables~C</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous~MS</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous~MS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Make_Supplier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Make/Supplier</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Part Details</relationshipLabel>
+        <relationshipName>Part_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MeasurementUnit__c</fullName>
+        <externalId>false</externalId>
+        <label>Measurement Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>nos</fullName>
+                    <default>false</default>
+                    <label>nos</label>
+                </value>
+                <value>
+                    <fullName>mm</fullName>
+                    <default>false</default>
+                    <label>mm</label>
+                </value>
+                <value>
+                    <fullName>gms</fullName>
+                    <default>false</default>
+                    <label>gms</label>
+                </value>
+                <value>
+                    <fullName>ltr</fullName>
+                    <default>false</default>
+                    <label>ltr</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 6</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 7</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Name_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Name 8</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 6</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 7</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parameter_Value_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Parameter Value 8</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field will have the part code that was generated from the parameter values.</description>
+        <externalId>false</externalId>
+        <label>Part Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Parameter_Value_1__c)) , LEFT(Parameter_Value_1__c,FIND(&quot;~&quot;,Parameter_Value_1__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_2__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_2__c)) , LEFT(Parameter_Value_2__c,FIND(&quot;~&quot;,Parameter_Value_2__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_3__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_3__c)) , LEFT(Parameter_Value_3__c,FIND(&quot;~&quot;,Parameter_Value_3__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_4__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_4__c)) , LEFT(Parameter_Value_4__c,FIND(&quot;~&quot;,Parameter_Value_4__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_5__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_5__c)) , LEFT(Parameter_Value_5__c,FIND(&quot;~&quot;,Parameter_Value_5__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_6__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_6__c)) , LEFT(Parameter_Value_6__c,FIND(&quot;~&quot;,Parameter_Value_6__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_7__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_7__c)) , LEFT(Parameter_Value_7__c,FIND(&quot;~&quot;,Parameter_Value_7__c)-1),&apos;&apos;)+
+IF(ISBLANK(Parameter_Value_8__c), &apos; &apos;, &apos; / &apos;) +
+IF(NOT(ISBLANK(Parameter_Value_8__c)) , LEFT(Parameter_Value_8__c,FIND(&quot;~&quot;,Parameter_Value_8__c)-1),&apos;&apos;)</formula>
+        <label>Part Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Base~BSE</fullName>
+                    <default>false</default>
+                    <label>Base~BSE</label>
+                </value>
+                <value>
+                    <fullName>Book~BOOK</fullName>
+                    <default>false</default>
+                    <label>Book~BOOK</label>
+                </value>
+                <value>
+                    <fullName>Capacitor~CC</fullName>
+                    <default>false</default>
+                    <label>Capacitor~CC</label>
+                </value>
+                <value>
+                    <fullName>Cleaning Agent~CLA</fullName>
+                    <default>false</default>
+                    <label>Cleaning Agent~CLA</label>
+                </value>
+                <value>
+                    <fullName>Component~CPT</fullName>
+                    <default>false</default>
+                    <label>Component~CPT</label>
+                </value>
+                <value>
+                    <fullName>Conformal Coating~CMCT</fullName>
+                    <default>false</default>
+                    <label>Conformal Coating~CMCT</label>
+                </value>
+                <value>
+                    <fullName>Connector~CN</fullName>
+                    <default>false</default>
+                    <label>Connector~CN</label>
+                </value>
+                <value>
+                    <fullName>Core~CRE</fullName>
+                    <default>false</default>
+                    <label>Core~CRE</label>
+                </value>
+                <value>
+                    <fullName>Cover~CVR</fullName>
+                    <default>false</default>
+                    <label>Cover~CVR</label>
+                </value>
+                <value>
+                    <fullName>Diode~DI</fullName>
+                    <default>false</default>
+                    <label>Diode~DI</label>
+                </value>
+                <value>
+                    <fullName>Encapsulation / Adhesives~ECP</fullName>
+                    <default>false</default>
+                    <label>Encapsulation / Adhesives~ECP</label>
+                </value>
+                <value>
+                    <fullName>Fastener~FSR</fullName>
+                    <default>false</default>
+                    <label>Fastener~FSR</label>
+                </value>
+                <value>
+                    <fullName>Integrated Chip~IC</fullName>
+                    <default>false</default>
+                    <label>Integrated Chip~IC</label>
+                </value>
+                <value>
+                    <fullName>O-Ring~OR</fullName>
+                    <default>false</default>
+                    <label>O-Ring~OR</label>
+                </value>
+                <value>
+                    <fullName>Packing Box~PBX</fullName>
+                    <default>false</default>
+                    <label>Packing Box~PBX</label>
+                </value>
+                <value>
+                    <fullName>Packing Materials~PCK</fullName>
+                    <default>false</default>
+                    <label>Packing Materials~PCK</label>
+                </value>
+                <value>
+                    <fullName>Plate~PLT</fullName>
+                    <default>false</default>
+                    <label>Plate~PLT</label>
+                </value>
+                <value>
+                    <fullName>Potting Materials~PTMLS</fullName>
+                    <default>false</default>
+                    <label>Potting Materials~PTMLS</label>
+                </value>
+                <value>
+                    <fullName>Printed Circuit Board~PC</fullName>
+                    <default>false</default>
+                    <label>Printed Circuit Board~PC</label>
+                </value>
+                <value>
+                    <fullName>Resistor~RE</fullName>
+                    <default>false</default>
+                    <label>Resistor~RE</label>
+                </value>
+                <value>
+                    <fullName>Sheet~ST</fullName>
+                    <default>false</default>
+                    <label>Sheet~ST</label>
+                </value>
+                <value>
+                    <fullName>Sleeve~SLV</fullName>
+                    <default>false</default>
+                    <label>Sleeve~SLV</label>
+                </value>
+                <value>
+                    <fullName>Solder~SDR</fullName>
+                    <default>false</default>
+                    <label>Solder~SDR</label>
+                </value>
+                <value>
+                    <fullName>Solder Flux~FLX</fullName>
+                    <default>false</default>
+                    <label>Solder Flux~FLX</label>
+                </value>
+                <value>
+                    <fullName>Sticker~STK</fullName>
+                    <default>false</default>
+                    <label>Sticker~STK</label>
+                </value>
+                <value>
+                    <fullName>Switch~SW</fullName>
+                    <default>false</default>
+                    <label>Switch~SW</label>
+                </value>
+                <value>
+                    <fullName>Tape~TPE</fullName>
+                    <default>false</default>
+                    <label>Tape~TPE</label>
+                </value>
+                <value>
+                    <fullName>Transipad~TSP</fullName>
+                    <default>false</default>
+                    <label>Transipad~TSP</label>
+                </value>
+                <value>
+                    <fullName>Transistor~TR</fullName>
+                    <default>false</default>
+                    <label>Transistor~TR</label>
+                </value>
+                <value>
+                    <fullName>Trimpot~TP</fullName>
+                    <default>false</default>
+                    <label>Trimpot~TP</label>
+                </value>
+                <value>
+                    <fullName>Wire~WR</fullName>
+                    <default>false</default>
+                    <label>Wire~WR</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Capacitor~CC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Connector~CN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Diode~DI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Integrated Chip~IC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Printed Circuit Board~PC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Resistor~RE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Switch~SW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Transistor~TR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Trimpot~TP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronic Item~E</controllingFieldValue>
+                <valueName>Wire~WR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Base~BSE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Component~CPT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Core~CRE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Cover~CVR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Fastener~FSR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>O-Ring~OR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Plate~PLT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Sticker~STK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Tape~TPE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mechanical Item~M</controllingFieldValue>
+                <valueName>Transipad~TSP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Cleaning Agent~CLA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Encapsulation / Adhesives~ECP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Packing Box~PBX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Packing Materials~PCK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Sleeve~SLV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Solder~SDR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Consumables~C</controllingFieldValue>
+                <valueName>Solder Flux~FLX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous~MS</controllingFieldValue>
+                <valueName>Book~BOOK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous~MS</controllingFieldValue>
+                <valueName>Conformal Coating~CMCT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous~MS</controllingFieldValue>
+                <valueName>Potting Materials~PTMLS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Miscellaneous~MS</controllingFieldValue>
+                <valueName>Sheet~ST</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Part Detail</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Part_Description__c</columns>
+        <columns>MeasurementUnit__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SPECS-{00000}</displayFormat>
+        <label>Part Detail ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Part Details</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <searchResultsAdditionalFields>Part_Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>ParamValue1_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_1__c != NULL,OR( NOT CONTAINS(Parameter_Value_1__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_1__c,LEN(Parameter_Value_1__c)-FIND(&quot;~&quot;,Parameter_Value_1__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_1__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_1__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue2_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_2__c != NULL,OR( NOT CONTAINS(Parameter_Value_2__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_2__c,LEN(Parameter_Value_2__c)-FIND(&quot;~&quot;,Parameter_Value_2__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_2__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_2__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue3_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_3__c != NULL,OR( NOT CONTAINS(Parameter_Value_3__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_3__c,LEN(Parameter_Value_3__c)-FIND(&quot;~&quot;,Parameter_Value_3__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_3__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_3__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue4_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_4__c != NULL,OR( NOT CONTAINS(Parameter_Value_4__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_4__c,LEN(Parameter_Value_4__c)-FIND(&quot;~&quot;,Parameter_Value_4__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_4__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_4__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue5_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_5__c != NULL,OR( NOT CONTAINS(Parameter_Value_5__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_5__c,LEN(Parameter_Value_5__c)-FIND(&quot;~&quot;,Parameter_Value_5__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_5__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_5__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue6_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_6__c != NULL,OR( NOT CONTAINS(Parameter_Value_6__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_6__c,LEN(Parameter_Value_6__c)-FIND(&quot;~&quot;,Parameter_Value_6__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_6__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_6__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue7_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_7__c != NULL,OR( NOT CONTAINS(Parameter_Value_7__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_7__c,LEN(Parameter_Value_7__c)-FIND(&quot;~&quot;,Parameter_Value_7__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_7__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_7__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ParamValue8_Format</fullName>
+        <active>true</active>
+        <description>This validation rule is to ensure that the user enters the parameter value as expected.</description>
+        <errorConditionFormula>AND(Parameter_Value_8__c != NULL,OR( NOT CONTAINS(Parameter_Value_8__c, &quot;~&quot;),LEN(RIGHT(Parameter_Value_8__c,LEN(Parameter_Value_8__c)-FIND(&quot;~&quot;,Parameter_Value_8__c)))&lt;1, FIND(&quot;~&quot;,Parameter_Value_8__c) &lt;2 ))</errorConditionFormula>
+        <errorDisplayField>Parameter_Value_8__c</errorDisplayField>
+        <errorMessage>Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

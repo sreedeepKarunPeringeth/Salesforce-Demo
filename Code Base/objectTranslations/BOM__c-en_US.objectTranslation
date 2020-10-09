@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BOM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BOM</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assembly Price_Only for code --></label>
+        <name>Assembly_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assembly Quantity_Only for code --></label>
+        <name>Assembly_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bom Price --></label>
+        <name>BomPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- BomURL --></label>
+        <name>BomURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Consumables~C</masterLabel>
+            <translation><!-- Consumables~C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic Item~E</masterLabel>
+            <translation><!-- Electronic Item~E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical Item~M</masterLabel>
+            <translation><!-- Mechanical Item~M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous~MS</masterLabel>
+            <translation><!-- Miscellaneous~MS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FinishedProductName --></label>
+        <name>FinishedProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make/Supplier --></label>
+        <name>MakeSupplier__c</name>
+        <relationshipLabel><!-- BOM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Material and Part Name --></label>
+        <name>MaterialPartName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Measurement Unit --></label>
+        <name>MeasurementUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartDetailName --></label>
+        <name>PartDetailName__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartDetailURL --></label>
+        <name>PartDetailURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Code --></label>
+        <name>Part_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Description --></label>
+        <name>Part_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Detail ID --></label>
+        <name>Part_Detail_ID__c</name>
+        <relationshipLabel><!-- BOM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Finished ProductID --></label>
+        <name>ProductID__c</name>
+        <relationshipLabel><!-- BOM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- General Quantity --></label>
+        <name>QuantityUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Sub Assemblies --></label>
+        <name>RelatedSubAssemblies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Category --></label>
+        <name>Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity_Only for Code --></label>
+        <name>Total_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>UnitPrice__c</name>
+    </fields>
+    <layouts>
+        <layout>BOM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Part Details --></label>
+            <section>Part Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,44 @@
+<aura:component >
+    
+    <aura:attribute name="subAssemblyID" type="String"/>
+    <aura:attribute name="bomID" type="String"/>
+    
+    <section role="dialog" class="slds-modal slds-fade-in-open slds-modal_medium">
+        
+        <div class="slds-modal__container modalContainer">
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close" onclick="{!c.closeModal}" variant="bare-inverse" class="slds-modal__close" alternativeText="close"/>
+                <h2 class="slds-modal__title slds-hyphenate">Select BOM</h2>
+            </header>
+            <lightning:notificationsLibrary aura:id="notifLib" />
+            <div class="slds-modal__content " id="modal-content-id-1">
+                <lightning:recordEditForm aura:id="assembliedBOMForm" objectApiName="AssembliedBOM__c" onerror="{!c.handleError}" onsubmit="{!c.handleSubmit}" onsuccess="{!c.handleSuccess}">
+             		
+                    <div class="slds-grid slds-m-around_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <!-- <lightning:inputField fieldName="BOM__c" required="true"/> -->
+                            <c:CustomLookup objectName="BOM__c" fieldName="Part_Description__c" label="*BOM" iconName="standard:article" placeholder="Enter Value" value="{!v.bomID}"/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <lightning:inputField fieldName="SubAssembly__c" value="{!v.subAssemblyID}" disabled="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-m-around_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <lightning:inputField fieldName="SUBQuantity__c"/>
+                        </div>
+                    </div>
+                    
+                    <br/><br/><br/>
+                    <div class="slds-m-around-large" />
+                    <footer class="slds-align_absolute-center slds-modal__footer">
+                        <lightning:button class="slds-m-horizontal_medium" label="Cancel" onclick="{!c.closeModal}" />
+                        <lightning:button class="slds-m-horizontal_medium slds-button_brand" type="submit" disabled="{!v.isSpinner}" label="Save"/>
+                    </footer>
+                </lightning:recordEditForm>
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    
+</aura:component>

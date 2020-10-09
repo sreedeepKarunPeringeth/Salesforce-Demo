@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SubAssembly BOM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SubAssembly BOMs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material__c</name>
+        <relationshipLabel><!-- SubAssembly BOMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PRICE --></label>
+        <name>SubAssemblyBOMPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly BOM Unique Name --></label>
+        <name>SubAssemblyBOMUniqueName__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubAssembly ID --></label>
+        <name>SubAssemblyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly Name --></label>
+        <name>SubAssemblyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubAssemblyURL --></label>
+        <name>SubAssemblyURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly Quantity --></label>
+        <name>Sub_Assembly_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly --></label>
+        <name>Sub_Assembly__c</name>
+        <relationshipLabel><!-- SubAssembly BOMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Supplier Name --></label>
+        <name>SupplierName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

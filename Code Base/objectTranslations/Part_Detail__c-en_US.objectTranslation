@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Part Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Part Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Consumables~C</masterLabel>
+            <translation><!-- Consumables~C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic Item~E</masterLabel>
+            <translation><!-- Electronic Item~E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical Item~M</masterLabel>
+            <translation><!-- Mechanical Item~M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous~MS</masterLabel>
+            <translation><!-- Miscellaneous~MS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Make/Supplier --></label>
+        <name>Make_Supplier__c</name>
+        <relationshipLabel><!-- Part Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Measurement Unit --></label>
+        <name>MeasurementUnit__c</name>
+        <picklistValues>
+            <masterLabel>gms</masterLabel>
+            <translation><!-- gms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ltr</masterLabel>
+            <translation><!-- ltr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mm</masterLabel>
+            <translation><!-- mm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nos</masterLabel>
+            <translation><!-- nos --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 1 --></label>
+        <name>Parameter_Name_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 2 --></label>
+        <name>Parameter_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 3 --></label>
+        <name>Parameter_Name_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 4 --></label>
+        <name>Parameter_Name_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 5 --></label>
+        <name>Parameter_Name_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 6 --></label>
+        <name>Parameter_Name_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 7 --></label>
+        <name>Parameter_Name_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Name 8 --></label>
+        <name>Parameter_Name_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 1 --></label>
+        <name>Parameter_Value_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 2 --></label>
+        <name>Parameter_Value_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 3 --></label>
+        <name>Parameter_Value_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 4 --></label>
+        <name>Parameter_Value_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 5 --></label>
+        <name>Parameter_Value_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 6 --></label>
+        <name>Parameter_Value_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 7 --></label>
+        <name>Parameter_Value_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parameter Value 8 --></label>
+        <name>Parameter_Value_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Code --></label>
+        <name>Part_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Description --></label>
+        <name>Part_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Category --></label>
+        <name>Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>Base~BSE</masterLabel>
+            <translation><!-- Base~BSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Book~BOOK</masterLabel>
+            <translation><!-- Book~BOOK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capacitor~CC</masterLabel>
+            <translation><!-- Capacitor~CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaning Agent~CLA</masterLabel>
+            <translation><!-- Cleaning Agent~CLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component~CPT</masterLabel>
+            <translation><!-- Component~CPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conformal Coating~CMCT</masterLabel>
+            <translation><!-- Conformal Coating~CMCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connector~CN</masterLabel>
+            <translation><!-- Connector~CN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core~CRE</masterLabel>
+            <translation><!-- Core~CRE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cover~CVR</masterLabel>
+            <translation><!-- Cover~CVR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diode~DI</masterLabel>
+            <translation><!-- Diode~DI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Encapsulation / Adhesives~ECP</masterLabel>
+            <translation><!-- Encapsulation / Adhesives~ECP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fastener~FSR</masterLabel>
+            <translation><!-- Fastener~FSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated Chip~IC</masterLabel>
+            <translation><!-- Integrated Chip~IC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O-Ring~OR</masterLabel>
+            <translation><!-- O-Ring~OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packing Box~PBX</masterLabel>
+            <translation><!-- Packing Box~PBX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packing Materials~PCK</masterLabel>
+            <translation><!-- Packing Materials~PCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plate~PLT</masterLabel>
+            <translation><!-- Plate~PLT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potting Materials~PTMLS</masterLabel>
+            <translation><!-- Potting Materials~PTMLS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printed Circuit Board~PC</masterLabel>
+            <translation><!-- Printed Circuit Board~PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resistor~RE</masterLabel>
+            <translation><!-- Resistor~RE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheet~ST</masterLabel>
+            <translation><!-- Sheet~ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sleeve~SLV</masterLabel>
+            <translation><!-- Sleeve~SLV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solder Flux~FLX</masterLabel>
+            <translation><!-- Solder Flux~FLX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solder~SDR</masterLabel>
+            <translation><!-- Solder~SDR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sticker~STK</masterLabel>
+            <translation><!-- Sticker~STK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch~SW</masterLabel>
+            <translation><!-- Switch~SW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tape~TPE</masterLabel>
+            <translation><!-- Tape~TPE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transipad~TSP</masterLabel>
+            <translation><!-- Transipad~TSP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transistor~TR</masterLabel>
+            <translation><!-- Transistor~TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trimpot~TP</masterLabel>
+            <translation><!-- Trimpot~TP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire~WR</masterLabel>
+            <translation><!-- Wire~WR --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Part Details Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Parameters --></label>
+            <section>Parameters</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue1_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue2_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue3_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue4_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue5_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue6_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue7_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the format &lt;paramDesc&gt;~&lt;paramCode&gt;. Eg: Fixed~F --></errorMessage>
+        <name>ParamValue8_Format</name>
+    </validationRules>
+</CustomObjectTranslation>

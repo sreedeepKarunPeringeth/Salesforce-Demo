@@ -1,0 +1,50 @@
+<aura:component >
+    
+    <aura:attribute name="parentId" type="String"/>
+    <aura:attribute name="notRMGSupplied" type="boolean" default="true"/>
+    
+    <section role="dialog" class="slds-modal slds-fade-in-open slds-modal_medium">
+        
+        <div class="slds-modal__container modalContainer">
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close" onclick="{!c.closeModal}" variant="bare-inverse" class="slds-modal__close" alternativeText="close"/>
+                <h2 class="slds-modal__title slds-hyphenate">New Sub Assembly</h2>
+            </header>
+            <div class="slds-modal__content " id="modal-content-id-1">
+                <lightning:notificationsLibrary aura:id="notifLib" />
+                <lightning:recordEditForm aura:id="recordEditForm" objectApiName="SubAssembly__c" onsuccess="{!c.handleSuccess}" onerror="{!c.handleError}" onsubmit="{!c.handleSubmit}">
+                    
+                    <div class="slds-grid slds-m-around_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <lightning:inputField fieldName="Name" required="true"/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <lightning:inputField fieldName="SubAssemblyID__c" required="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-m-around_medium">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                            <lightning:inputField aura:id="supplierID" fieldName="Make_Supplier__c" onchange="{!c.checkForSupplier}"/>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid slds-m-around_medium">
+                        <aura:if isTrue="{!v.notRMGSupplied}">
+                            <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small slds-p-top_small">
+                                <lightning:inputField fieldName="Price__c" />
+                            </div>
+                        </aura:if>
+                    </div> 
+                    
+                    <div class="slds-m-around-large" />
+                    <footer class="slds-align_absolute-center slds-modal__footer">
+                        <lightning:button class="slds-m-horizontal_medium" label="Cancel" onclick="{!c.closeModal}" />
+                        <lightning:button class="slds-m-horizontal_medium slds-button_brand" type="submit" disabled="{!v.isSpinner}" label="Save"/>
+                    </footer>
+                </lightning:recordEditForm>
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    
+</aura:component>

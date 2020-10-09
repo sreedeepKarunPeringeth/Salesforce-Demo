@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prospect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prospects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Prospects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Quantity --></label>
+        <name>Expected_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Revenue --></label>
+        <name>Expected_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Name --></label>
+        <name>Prospect_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Stage --></label>
+        <name>Prospect_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal Lost</masterLabel>
+            <translation><!-- Deal Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal Won</masterLabel>
+            <translation><!-- Deal Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enquiry</masterLabel>
+            <translation><!-- Enquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoiced</masterLabel>
+            <translation><!-- Invoiced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase Order</masterLabel>
+            <translation><!-- Purchase Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Prospect Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

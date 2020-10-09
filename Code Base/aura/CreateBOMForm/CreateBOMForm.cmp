@@ -1,0 +1,96 @@
+<aura:component controller="MaterialsRelatedListController">
+    <aura:attribute name="parentId" type="string"/>
+    <aura:attribute name="categoryType" type="string"/>
+    <aura:attribute name="subCategoryList" type="String[]"/>
+    <aura:attribute name="categoryDisplayName" type="string"/>
+    <aura:attribute name="parentName" type="string"/>
+    <aura:attribute name="ownerName" type="string" />
+    <aura:attribute name="subAssembly" type="String"/>
+    <aura:attribute name="subAssemblyName" type="String"/>
+    <aura:attribute name="partDetailId" type="string" />
+    <aura:attribute name="bomInstance" type="BOM__c" default="{'sobjectType':'BOM__c'}" />
+    <aura:attribute name="bomError" type="String" default="Please select a Part Detail ID from the lookup or create new one"/>
+    <aura:attribute name="duplicateError" type="String" default="The BOM already exist !!!"/>
+    
+    <aura:registerEvent name="myEvent" type="c:refreshRelatedList"/>
+    
+    <section role="dialog" class="slds-modal slds-fade-in-open slds-modal_medium">
+        
+        <div class="slds-modal__container modalContainer">
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close" onclick="{!c.closeModal}" variant="bare-inverse" class="slds-modal__close" alternativeText="close"/>
+                <h2 class="slds-modal__title slds-hyphenate">New BOM ({!v.categoryDisplayName})</h2>
+            </header>
+            <div class="slds-modal__content " id="modal-content-id-1">
+                <div class="slds-m-around_medium">
+                    <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container" >
+                        <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">Information</span>
+                    </h3>
+                    <div class="duplicateBomError slds-text-color--error" style="display: none">
+                        {!v.duplicateError}
+                    </div>
+                    
+                    <div class="slds-grid slds-wrap slds-m-bottom_medium slds-p-top_small">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <lightning:input name="FinishedProductId" label="Finished ProductID" value="{!v.parentName}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <lightning:input class="slds-size_2-of-2" name="Owner" label="Owner" value="{!v.ownerName}" disabled="true"/>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-m-bottom_medium">
+                        <!--<aura:if isTrue="{!not(empty(v.subAssemblyName))}">
+                            <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                                <lightning:input class="slds-size_1-of-2 slds-p-horizontal_small" name="Sub Assembly" label="Sub Assembly" value="{!v.subAssemblyName}" disabled="true"/>
+                            </div>
+                        </aura:if>-->
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <lightning:input class="" name="Category" label="Category" value="{!v.categoryType}" disabled="true"/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+                            <lightning:input class="" name="Quantity" label="Quantity" type="decimal" value="{!v.bomInstance.QuantityUnit__c}"/>
+                        </div>
+                    </div>
+                    <lightning:recordEditForm objectApiName="BOM__c">
+                        <div class="slds-grid slds-wrap slds-m-bottom_medium">
+                            <div class="slds-grid slds-size_1-of-2 slds-p-left_small slds-p-bottom_small">
+                                <lightning:inputfield class="slds-col slds-p-horizontal_small" aura:id="supplierId" fieldName="MakeSupplier__c"/>
+                            </div>
+                            <div class="slds-grid slds-size_1-of-2 slds-p-left_small slds-p-bottom_small">
+                                <lightning:inputfield class="slds-col slds-p-horizontal_small" aura:id="UnitPriceId" fieldName="UnitPrice__c"/>
+                            </div>
+                        </div>
+                    </lightning:recordEditForm>
+                    <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder test-id__section-header-container" >
+                        <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate" >Part Details</span>
+                    </h3>
+                    <!-- <div class="slds-grid slds-p-around_x-small">
+                        <lightning:recordEditForm objectApiName="BOM__c">
+                         <lightning:inputfield class="slds-size_2-of-2 slds-p-horizontal_small" aura:id="measurementUnitId" fieldName="MeasurementUnit__c"/>
+                        </lightning:recordEditForm>
+                    </div> -->
+                    <br/>
+                    <div class="slds-p-left_x-small">
+                        <c:CustomLookup objectName="Part_Detail__c" filterCategoryName="{!v.categoryType}" fieldName="Part_Description__c" label="Part Detail ID" iconName="standard:article" placeholder="Enter Value" value="{!v.bomInstance.Part_Detail_ID__c}"/>
+                    </div>
+                    <div class="errorBOM slds-text-color--error" style="display: none">
+                        {!v.bomError}
+                    </div>
+                    
+                    <div class="slds-float_right slds-p-bottom_xx-large slds-m-horizontal_large slds-button slds-button_outline_brand">
+                        <ui:button label=" New Part Detail" press="{!c.createPartDetail}" class="btn"/>
+                    </div>
+                    
+                    <div aura:id='partDetailModal'/>
+                    
+                </div>
+            </div>
+            <div class="slds-m-around-large" />
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                <button class="slds-button slds-button_brand" onclick="{!c.saveBom}">Save</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>

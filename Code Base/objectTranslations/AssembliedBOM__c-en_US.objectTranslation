@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assemblied BOM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assemblied BOMs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assemblied BOM ID --></label>
+        <name>AssembliedBOMID__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOM --></label>
+        <name>BOM__c</name>
+        <relationshipLabel><!-- Assemblied BOMs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Measurement Unit --></label>
+        <name>MeasurementUnit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Description --></label>
+        <name>PartDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>SUBQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly Price --></label>
+        <name>SubAssemblyPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly --></label>
+        <name>SubAssembly__c</name>
+        <relationshipLabel><!-- Assemblied BOMs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Assemblied BOM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

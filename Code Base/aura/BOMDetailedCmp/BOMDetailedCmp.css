@@ -1,0 +1,10 @@
+.THIS .slds-clearfix.slds-float_right.btn{
+   background-color: #2574a9;
+   color: #fff;
+   padding: 10px 20px;
+}
+
+.THIS .slds-grid_align-end
+{
+    justify-content: left !important; 
+}

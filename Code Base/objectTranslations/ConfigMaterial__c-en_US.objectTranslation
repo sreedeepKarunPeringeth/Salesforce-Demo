@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ConfigMaterial</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ConfigMaterials</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Consumables~C</masterLabel>
+            <translation><!-- Consumables~C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic Item~E</masterLabel>
+            <translation><!-- Electronic Item~E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mechanical Item~M</masterLabel>
+            <translation><!-- Mechanical Item~M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous~MS</masterLabel>
+            <translation><!-- Miscellaneous~MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Assembly~SA</masterLabel>
+            <translation><!-- Sub Assembly~SA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParamName1 --></label>
+        <name>ParamName1__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName2 --></label>
+        <name>ParamName2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName3 --></label>
+        <name>ParamName3__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName4 --></label>
+        <name>ParamName4__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName5 --></label>
+        <name>ParamName5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName6 --></label>
+        <name>ParamName6__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName7 --></label>
+        <name>ParamName7__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParamName8 --></label>
+        <name>ParamName8__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubCategory --></label>
+        <name>SubCategory__c</name>
+    </fields>
+    <layouts>
+        <layout>ConfigMaterial Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

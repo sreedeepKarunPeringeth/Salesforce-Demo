@@ -1,0 +1,43 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" controller="MaterialsRelatedListController">
+    
+    <aura:attribute name="bomDetails" type="object"/>
+    <aura:attribute name="bomTotalCount" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:refreshRelatedList" action="{!c.doInit}"/>
+    
+    <article class="slds-card slds-card_boundary">
+        <div class="slds-card__header slds-grid related_list_themed_border_top forceRelatedListCardHeader">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="account">
+                        <lightning:icon class="slds-input__icon" iconName="custom:custom32" size="small" alternativeText="BOM"/>
+                        <span class="slds-assistive-text">BOM</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="BOM">
+                            <span>BOM ({!v.bomTotalCount})</span>
+                        </a>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <article class="slds-card">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <lightning:tabset selectedTabId="">
+                        <aura:iteration items="{!v.bomDetails}" var="item">
+                            <lightning:tab label="{! (item.catDisplayName)+' (' + (item.valueCount) +')'}" id="{!item.categoryType}">
+                                <c:BOMDetailedCmp parentId="{!v.recordId}" categoryType="{!item.categoryType}" subCategoryList="{!item.subCategoryList}"
+                                                  ownerName= "{!item.ownerName}" parentName="{!item.parentName}" categoryDisplayName="{!item.catDisplayName}" data="{!item.bomList}" subAssemblyBOMList="{!item.subAssemblyBOMList}"/>
+                            </lightning:tab>
+                        </aura:iteration>
+                    </lightning:tabset>
+                </header>
+            </div>
+            <footer class="slds-card__footer"/>
+        </article>
+    </article>
+</aura:component>

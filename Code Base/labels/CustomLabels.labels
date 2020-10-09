@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>RMGSupplierRecordID</fullName>
+        <categories>Other</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMG Supplier Record ID</shortDescription>
+        <value>0010T000008Z1krQAC</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,76 @@
+<aura:component  controller="MaterialsRelatedListController">
+    
+    <aura:attribute name="parentId" type="string" default=""/>
+    <aura:attribute name="categoryType" type="string" default=""/>
+    <aura:attribute name="ownerName" type="string" default=""/>
+    <aura:attribute name="partDetail" type="Part_Detail__c" default="{'sobjectType':'Part_Detail__c','Parameter_Value_1__c':''}" />
+    <aura:attribute name="subCategoryList" type="String[]" />
+    <aura:attribute name="errorMsgLabel" type="String" default="Please fill all the required Parameter Values (Eg: Fixed~F) "/>
+    <aura:attribute name="errorUnitMsg" type="String" default="Please choose a measurement unit"/>
+    <aura:attribute name="errorSubCat" type="String" default="Please choose a valid sub-category"/>
+    <aura:attribute name="serverError" type="String" default=""/>
+    
+    <aura:registerEvent name="myEvent" type="c:passPartDetailId"/>
+    
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                    <c:svgIcon svgPath="/assets/icons/utility-sprite/svg/symbols.svg#close" category="standard" size="large" name="close" />
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate ">New Part Detail</h2>
+            </header>
+            <div class="slds-modal__content " id="modal-content-id-1">
+                <div class="slds-grid slds-wrap slds-m-bottom_x-large">
+                    <lightning:recordEditForm objectApiName="Part_Detail__c">
+                        <div class="slds-grid slds-p-around_x-small">
+                            <lightning:input class="slds-size_5-of-6 slds-p-horizontal_small" name="Owner" label="Owner" value="{!v.ownerName}" disabled="true"/>
+                    		<lightning:input class="slds-size_2-of-3 slds-p-horizontal_small" name="Category" label="Category" value="{!v.categoryType}" disabled="true"/>
+                        </div>
+                        <!--<div class="slds-grid slds-p-left_medium">
+                            <lightning:inputfield class="slds-size_4-of-5 slds-p-horizontal_small" aura:id="supplierId" fieldName="Make_Supplier__c"/>
+                        </div>-->
+                        <div class="slds-grid slds-p-horizontal_medium">
+                        	<!--<lightning:inputfield class="slds-size_5-of-6" aura:id="priceId" fieldName="Price__c"/>-->
+                        	<lightning:inputfield class="slds-size_2-of-3" aura:id="measurementUnitId" fieldName="MeasurementUnit__c" required="true"/>
+                        </div>
+                        <div class="errorUnit slds-size_2-of-2 slds-text-color--error slds-p-horizontal_large" style="display: none">
+                    		{!v.errorUnitMsg}
+                		</div>
+                    <div>
+                    <lightning:select class="slds-p-left_large slds-size_1-of-2" aura:id="subcategoryId" name="SubCategory" label="SubCategory" onchange="{!c.fetchParamNames}">
+                        <option value="defaultMsg">Select one sub-category...</option>
+                        <aura:iteration items="{!v.subCategoryList}" var="subCat">
+                            <option value="{!v.subCat}" text="{!subCat}" />
+                        </aura:iteration>
+                    </lightning:select>
+                        </div>
+                    </lightning:recordEditForm>
+                    <div class="errorSubCat slds-size_2-of-2 slds-text-color--error slds-p-horizontal_small" style="display: none">
+                    	{!v.errorSubCat}
+                	</div>
+                
+                 </div>
+                <h3 class="slds-section__title slds-theme--shade primaryPaletteBorder slds-m-around_x-small slds-p-left_x-small">Parameters</h3>
+                <div class="paramSection">
+                    <div class="slds-grid slds-wrap slds-m-bottom_x-large">
+                        {!v.body}
+                    </div>
+                </div>
+            </div>
+            <footer class="slds-modal__footer">
+                <div class="errMsgLabel slds-text-color--error" style="display: none">
+                    {!v.errorMsgLabel}
+                </div>
+                <div class="serverError slds-text-color--error" style="display: none">
+                    {!v.serverError}
+                </div>
+                <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+                <button aura:id="savePartDetailBtn" class="slds-button slds-button_brand" onclick="{!c.createPartDetail}">Save</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</aura:component>

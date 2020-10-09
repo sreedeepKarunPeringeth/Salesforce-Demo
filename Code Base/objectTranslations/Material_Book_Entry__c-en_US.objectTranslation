@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material Book Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Material Book Entries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Book Name --></label>
+        <name>Book_Name__c</name>
+        <relationshipLabel><!-- Material Book Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MaterialID --></label>
+        <name>MaterialID__c</name>
+        <relationshipLabel><!-- Material Book Entries --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

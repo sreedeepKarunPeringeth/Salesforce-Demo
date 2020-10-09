@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>RMG_Logo1</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>RMG</label>
+    <navType>Standard</navType>
+    <tabs>standard-AppLauncher</tabs>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Prospect__c</tabs>
+    <tabs>Materials__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>BOM__c</tabs>
+    <tabs>Part_Detail__c</tabs>
+    <tabs>ConfigMaterial__c</tabs>
+    <tabs>SubAssembly__c</tabs>
+    <tabs>AssembliedBOM__c</tabs>
+    <tabs>SubAssemblyBOM__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Sales_App_UtilityBar</utilityBar>
+</CustomApplication>

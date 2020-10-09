@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template" >
+	<aura:attribute name="PartDetailId" type="String"/>
+    <aura:attribute name="partCode" type="String"/>
+    <aura:attribute name="partName" type="String"/>
+</aura:event>

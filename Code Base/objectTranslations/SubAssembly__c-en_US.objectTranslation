@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sub Assembly</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sub Assembly</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make/Supplier --></label>
+        <name>Make_Supplier__c</name>
+        <relationshipLabel><!-- Sub Assembly --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubAssembly ID --></label>
+        <name>SubAssemblyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Assembly URL --></label>
+        <name>SubAssemblyURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplier Name --></label>
+        <name>SupplierName__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueName --></label>
+        <name>UniqueName__c</name>
+    </fields>
+    <layouts>
+        <layout>Sub Assembly Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

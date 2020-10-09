@@ -1,0 +1,48 @@
+<aura:component >
+	
+    <aura:attribute name="parentId" type="String"/>
+    <aura:attribute name="categoryType" type="String"/>
+    <aura:attribute name="subCategoryList" type="String[]"/>
+    <aura:attribute name="categoryDisplayName" type="String"/>
+    <aura:attribute name="parentName" type="String"/>
+    <aura:attribute name="ownerName" type="String"/>
+    <aura:attribute name="subAssembly" type="String"/>
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="subAssemblyBOMList" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="subAssemblyColumns" type="List"/>
+    <aura:attribute name="subAssemblyName" type="String"/>
+    <aura:attribute name="showCreateButtons" type="boolean" default="true"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <aura:if isTrue="{!v.showCreateButtons}">
+        <div class="slds-p-vertical_small">
+            <aura:if isTrue="{!(v.categoryDisplayName)!='Sub Assembly'}">
+                <ui:button label=" New BOM" press="{!c.createBOMRecord}" class="btn"/>
+                <aura:set attribute="else">
+                    <ui:button label=" Add Sub Assembly" press="{!c.createSubAssemblyBOMRecord}" class="btn"/>
+                </aura:set>
+            </aura:if>
+        </div>
+    </aura:if>
+    
+    <div aura:id='subAssemblyBOMModal'/>
+    <div aura:id='popModalModal'/>
+    <!--<div class="slds-clearfix">
+        <div class="slds-float_right slds-button slds-button_outline_brand">
+			<ui:button label=" New " press="{!c.createRecord}" class="btn"/>
+        </div>
+    </div>-->
+    
+    <div style="height: 300px">
+        <aura:if isTrue="{!(v.categoryDisplayName)!='Sub Assembly'}">
+            <lightning:datatable keyField="id" data="{!v.data}" columns="{! v.columns }" 
+                             hideCheckboxColumn="true"/>
+            <aura:set attribute="else">
+                <lightning:datatable keyField="id" data="{! v.subAssemblyBOMList }" columns="{! v.subAssemblyColumns }" 
+                                 hideCheckboxColumn="true"/>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>
